@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+  </head>
+  <body>
+    <ul id="container"></ul>
+  </body>
+
+  <script>
+    console.log("hola");
+    const to_do = [
+      "Alimentar al perro",
+      "Estudiar para prueba escrita",
+      "Pagar taxes",
+      "Pasear a perro",
+      "Comprar entradas para el cine",
+    ];
+    const change = (e) => {};
+    var element = document.getElementById("container");
+    let texthtml = "";
+    to_do.map((e, i) => {
+      texthtml += `<li>asda${e}  <input onchange='change(${i})' type="checkbox" name="" value="${i}"></li>`;
+    });
+
+    element.innerHTML = texthtml;
+  </script>
+</html>
